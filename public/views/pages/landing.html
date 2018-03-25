@@ -28,7 +28,7 @@
   </div>
 
   <!-- Message -->
-  <p>These are screenshots from our iOS Alpha from back in January. We're set to launch our Beta in April.</p>
+  <p>These are screenshots from our iOS Alpha built in January. We're launching our redesigned, refined iOS Beta in April.</p>
 
 </div>
 <script>
@@ -40,14 +40,15 @@
       var $body = $("body");
       setInterval(function() {
           if (goingForward && slide == slideLast) {
-             goingForward = false;
+             // goingForward = false;
+             slide = 0;
           }
-          else if (!goingForward && slide === 1) {
-             goingForward = true;
-          }
+          // else if (!goingForward && slide === 1) {
+             // goingForward = true;
+          // }
 
           if (goingForward) slide++;
-          else slide--;
+          // else slide--;
 
           $body.find(".device-screen").attr("class", "device-screen slide-"+slide);
 

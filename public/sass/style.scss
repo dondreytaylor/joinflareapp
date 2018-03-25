@@ -1,6 +1,6 @@
 html, body {
   overflow: hidden;
-  @media (max-width: 640px), (max-height: 700px) {
+  @media (max-width: 640px), (max-height: 770px) {
     overflow-y: auto;
   }
 }
@@ -22,7 +22,12 @@ html, body {
   @media (max-width: 640px) {
     transform: scale(0.7, 0.7);
   }
-  text-align: center;
+
+  p {
+    text-align: center;
+    color: #FF0C0C;
+    font-size: 1.1rem;
+  }
 }
 
 #heading {
