@@ -16,14 +16,15 @@ html, body {
 
 #content {
   transform: scale(0.8, 0.8);
-  margin-top: -5rem; }
+  margin-top: -6rem; }
   @media (max-width: 640px) {
     #content {
       transform: scale(0.7, 0.7); } }
   #content p {
     text-align: center;
     color: #FF0C0C;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    margin-bottom: 2rem; }
 
 #heading {
   display: block;
@@ -33,7 +34,7 @@ html, body {
 #subheading {
   display: block;
   width: 25rem;
-  margin: 1rem auto 2rem auto; }
+  margin: 1rem auto 1rem auto; }
 
 #phone {
   margin: 0 auto 2rem auto;
