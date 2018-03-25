@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Riffic";
-    src: url(/assets/fonts/riffic.ttf);
+    src: url(/assets/fonts/riffic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 html, body {
