@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Riffic";
-    src: url(/assets/fonts/riffic.ttf) format("truetype");
+    src: url('/assets/fonts/riffic.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -38,7 +38,7 @@ html, body {
     margin: 1rem auto 0.5rem auto;
     text-align: center;
     @media (max-width: 640px) {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
     }
 
     strong {
@@ -56,6 +56,9 @@ html, body {
     margin: 0 auto 1.5rem auto;
     line-height: 1.8rem;
     color: #FF3D3D;
+    @media (max-width: 640px) {
+        font-size: 0.9rem;
+    }
   }
 }
 
