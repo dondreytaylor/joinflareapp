@@ -16,7 +16,8 @@ html, body {
 
 #content {
   transform: scale(0.8, 0.8);
-  margin-top: -5rem; }
+  margin-top: -5rem;
+  text-align: center; }
   @media (max-width: 640px) {
     #content {
       transform: scale(0.7, 0.7); } }
