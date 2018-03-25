@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Riffic";
+    src: url(/assets/fonts/riffic.ttf);
+}
+
 html, body {
   overflow: hidden;
   @media (max-width: 640px), (max-height: 770px) {
@@ -21,13 +26,34 @@ html, body {
   margin-top: -6rem;
   @media (max-width: 640px) {
     transform: scale(0.7, 0.7);
+    margin-top: -9rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    font-family: "Riffic";
+    letter-spacing: 0.1rem;
+    margin: 1rem auto 0.5rem auto;
+    text-align: center;
+    @media (max-width: 640px) {
+      font-size: 1.4rem;
+    }
+
+    strong {
+      color: #FF0C0C;
+    }
   }
 
   p {
     text-align: center;
     color: #FF0C0C;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-family: "Riffic";
+    letter-spacing: 0.1rem;
+    max-width: 38rem;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.8rem;
+    color: #FF3D3D;
   }
 }
 
@@ -35,12 +61,6 @@ html, body {
   display: block;
   width: 8rem;
   margin: 2rem auto 1rem auto;
-}
-
-#subheading {
-  display: block;
-  width: 25rem;
-  margin: 1rem auto 1rem auto;
 }
 
 #phone {
