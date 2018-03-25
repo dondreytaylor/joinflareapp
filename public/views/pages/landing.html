@@ -1,8 +1,8 @@
+<!-- YC Demo -->
+<img src="/assets/images/yc-demo.png" id="yc-demo">
+
 <div id="content">
-
-  <!-- YC Demo -->
-  <img src="/assets/images/yc-demo.png" id="yc-demo">
-
+  
   <!-- Heading -->
   <img src="/assets/images/heading.png" id="heading">
 
@@ -26,5 +26,27 @@
       </div>
     </div>
   </div>
-
 </div>
+<script>
+  $(function() {
+
+      var goingForward = true;
+      var slide = 1;
+      var slideLast = 12;
+      var $body = $("body");
+      setInterval(function() {
+          if (goingForward && slide == slideLast) {
+             goingForward = false;
+          }
+          else if (!goingForward && slide === 1) {
+             goingForward = true;
+          }
+
+          if (goingForward) slide++;
+          else slide--;
+
+          $body.find(".device-screen").attr("class", "device-screen slide-"+slide);
+
+      },5000);
+  })
+</script>

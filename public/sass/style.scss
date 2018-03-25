@@ -1,8 +1,28 @@
+html, body {
+  overflow: hidden;
+  @media (max-width: 640px), (max-height: 700px) {
+    overflow-y: auto;
+  }
+}
+
 #yc-demo {
   position: fixed;
   top: 1rem;
   left: 1rem;
   width: 10rem;
+  transition: opacity 0.3s ease;
+  @media (max-width: 640px) {
+      opacity: 0;
+  }
+}
+
+#content {
+  transform: scale(0.8, 0.8);
+  margin-top: -5rem;
+  @media (max-width: 640px) {
+    transform: scale(0.7, 0.7);
+  }
+
 }
 
 #heading {
@@ -59,7 +79,22 @@
      background-size: cover;
      background-repeat: no-repeat;
 
-     background-image: url(/assets/images/screen.png);
+     background-image: url(/assets/images/phone-screens.png);
+     background-position-x: 0;
+     transition: background-position-x ease 0.5s;
+
+     &.slide-1 { background-position-x: 0; }
+     &.slide-2 { background-position-x: -300px; }
+     &.slide-3 { background-position-x: -600px; }
+     &.slide-4 { background-position-x: -900px; }
+     &.slide-5 { background-position-x: -1200px; }
+     &.slide-6 { background-position-x: -1500px; }
+     &.slide-7 { background-position-x: -1800px; }
+     &.slide-8 { background-position-x: -2125px; }
+     &.slide-9 { background-position-x: -2435px; }
+     &.slide-10 { background-position-x: -2743px; }
+     &.slide-11 { background-position-x: -3050px; }
+     &.slide-12 { background-position-x: -3346px; }
 }
 
  .device-body:before {
