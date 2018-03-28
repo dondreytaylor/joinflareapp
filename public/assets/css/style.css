@@ -33,8 +33,6 @@ html, body {
     @media (max-width: 640px) {
       #content h3 {
         font-size: 1.1rem; } }
-    #content h3 strong {
-      color: #FF0C0C; }
   #content p {
     text-align: center;
     color: #FF0C0C;
